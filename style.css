@@ -1,0 +1,222 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/*styling for  entire page*/
+body {
+    background-image: linear-gradient( to top,#5F45BA, #ad48c1);
+    color: #fff;
+    width:100%;
+    margin: 0;
+    text-align: center;
+    height: 100hv;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/*styling for  nav list*/
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom right,#87DE8C, orange);
+}
+
+/*styling for  nav items*/
+nav ul li {
+    margin: 3% auto;
+    font-size: 2vh;
+    padding: 1%;
+}
+
+/*styling for links */
+a {
+    text-decoration: none;
+    color: rgb(64, 66, 85);
+}
+
+a:hover{
+    color: yellow;
+}
+
+/*styling for images */
+img {
+    max-width: 49%;
+    height: auto;
+    max-height: 750px;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: #E5E7E9 1px solid;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.home-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 10px;
+}
+
+.home-img img {
+    width: 33%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+.logo {
+    margin: 20px auto;
+    width: 30%;
+    min-width: 4vw;
+    min-height: 2vh;
+}
+
+.shop-choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.shop-choice img {
+    border-radius: 15px;
+}
+
+figcaption {
+    margin: 3px auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*styling for heading */
+h1 {
+    clear:left;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 2vw;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/*styling for subheading */
+h2 {
+    clear: left;
+    font-size: 3vw;
+    color: #fff;
+    padding: 6%;
+}
+
+/*styling for paragraph */
+
+p {
+    text-align: center;
+    font-size: 2.5vw;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+th,tr,table,td {
+    border-collapse: collapse;
+    padding: 4%;
+}
+
+caption {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 40%;
+    margin: 5px auto;
+    border: solid 4px white;
+}
+
+th, td {
+    border: 1px solid white;
+}
+
+tr{
+    text-align: right;
+}
+
+footer p {
+    margin: 4% auto;
+    font-size: 1.8vh;
+    text-align: center;
+    width: 80%;
+}
+
+.btn {
+    border: none;
+    margin: 1vh auto;
+    display: block;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: black;
+    width:10%;
+}
+
+fieldset {
+    border: 2px white solid;
+}
+
+fieldset legend {
+    text-align: center;
+    justify-content: center;
+    margin: 1vh 1vw;
+    font-weight: bold;
+    padding: 0 2em;
+    font-size: 2em;
+    
+}
+
+fieldset label{
+    margin: 1vh auto;
+}
+
+.container-survey label{
+    display: block;
+}
+
+
+/*Media Querie for Tablets*/
+@media screen and (max-width: 480px), print{
+
+    nav ul {
+        display: block;
+        margin: 0.5%;
+    }
+
+    nav ul li {
+        border: white solid 1px;
+        border-collapse: collapse;
+        
+    }
+}
+
+/*Media Querie for Desktops*/
+@media screen and (min-width: 1024px), print{
+nav ul li{
+    font-size: 4vh;
+}
+}
+

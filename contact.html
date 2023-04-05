@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--contains all of the meta data for the page -->
+<head>
+  
+    <!--the title of the site -->
+  <title>Contact Us</title>
+  
+  <!--designates the character set to use -->
+  <meta charset="UTF-8" />
+  
+  <!--allows the viewport to be changed for various devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- links the stylesheet to the page -->
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<!--contains all of the output for the page -->
+<body>
+  
+  <!--contains the topmost content of the page -->
+  <header>
+
+    <!--the navigation bar -->
+    <nav>
+
+        <!--unordered list containing the names and links to the other pages of the site -->
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="shop.html">Shop</a></li>
+            
+            <li><a href="hours.html">Location/Hours</a></li>
+            
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+    </nav>
+    <!-- -->
+    <!--Brand logo -->
+    <img src="img/vicious-cycles-logo.png" class="logo">
+    
+
+  </header>
+
+  <!--contains the main content of the page -->
+  <main>
+   <p>To contact us for any requests or concerns, please fill out the form below.</p>
+
+   <form class="grid" id="contact">
+    <fieldset>
+        <legend>Customer Information</legend>
+
+            <label for="fName">First Name:</label><br>
+            <input type="text" name="fName" id="fName"><br>
+
+            <label for="lName">Last Name:</label><br>
+            <input type="text" name="lName" id="lName"><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" id="email"><br>
+
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" id="phone"><br>
+
+            <label id="status">Customer Status</label><br>
+
+            <label for="current">Current</label><br>
+            <input type="radio" name="status" id="current"><br>
+
+            <label for="future">Future</label><br>
+            <input type="radio" name="status" id="future"><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Inquiries</legend>
+        <textarea id="comments" name="comments" rows="6" cols="50" placeholder="How can we help you?"></textarea>
+
+    </fieldset>
+    <fieldset id="container-survey">
+        <legend>Quick Survey</legend>
+        <label id="survey">What are your favorite types of biking?</label><br><br>
+
+        <label for="mountain">Mountain Biking</label>
+        <input type="checkbox" name="mountain" class="fav" id="mountain" value="mountain"><br><br>
+
+        <label for="road">Road Biking</label>
+        <input type="checkbox" name="road" class="fav" id="road" value="road"><br><br>
+
+        <label for="bmx">BMX Biking</label>
+        <input type="checkbox" name="bmx" class="fav" id="bmx" value="bmx"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Customer Satisfaction</legend>
+
+        <label id="cust" for="satisfaction">How was your experience with contacting us?</label>
+ 
+            <select id="dropdown" >
+              
+              <option value="great">Great</option>
+              
+              <option value="soso">So-so</option>
+
+              <option value="terrible">Terrible</option>
+
+            </select>
+    </fieldset>
+
+   <button form="contact" type="submit" value="Submit" class="btn">Submit</button>
+
+</form>
+
+  </main>
+
+  <!--contains the content at the bottom of the page -->
+  <footer>
+    <p><a href="contact.hmtl">Contact Us</a></p>
+    <p>&copy; All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
